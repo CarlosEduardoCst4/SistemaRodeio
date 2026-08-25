@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj": {}
+    "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj": {
+    "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+        "projectUniqueName": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
         "projectName": "SistemaRodeio",
-        "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+        "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
         "packagesPath": "C:\\Users\\Duduc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\obj\\",
+        "outputPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

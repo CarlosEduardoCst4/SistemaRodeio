@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lg6JXBNSeEw=",
+  "dgSpecHash": "ByXPVXfzB5g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+  "projectFilePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Duduc\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Duduc\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
@@ -134,10 +134,10 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "O pacote 'NuGet.Packaging' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+      "filePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -146,10 +146,10 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "O pacote 'NuGet.Protocol' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\SistemaRodeio\\SistemaRodeio\\SistemaRodeio.csproj",
+      "filePath": "C:\\Users\\Duduc\\OneDrive\\Documentos\\Facul\\Segundo_Ano\\Algt_Almir\\DotNet\\ProjetoDotNet\\SistemaRodeio\\SistemaRodeio.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"
