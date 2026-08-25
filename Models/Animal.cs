@@ -24,15 +24,15 @@ namespace SistemaRodeio.Models
         public virtual TipoAnimal tipoAnimal { get; set; }
 
         [Display(Name = "Idade: ")]
-        [Range(18, 120, ErrorMessage = "idade entre 18 e 120 anos")]
+        [Range(0, 120, ErrorMessage = "idade entre 0 e 120 anos")]
         public int idade { get; set; }
 
         [Display(Name = "Peso: ")]
-        [Range(0, 1000, ErrorMessage = "peso entre 0 e 1000 kg")]
+        [Range(0.0, 1000.00, ErrorMessage = "peso entre 0 e 1000 kg")]
         public float peso { get; set; }
 
         [Display(Name = "Valor: ")]
-        [Range(0, 10000, ErrorMessage = "valor entre 0 e 10000")]
+        [Range(0.0, 10000.00, ErrorMessage = "valor entre 0 e 10000")]
         public float valor { get; set; }
     }
 }

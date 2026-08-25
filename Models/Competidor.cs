@@ -23,7 +23,7 @@ namespace SistemaRodeio.Models
         public virtual Cidade cidade { get; set; }
 
         [Display(Name = "Idade: ")]
-        [Range(18, 120, ErrorMessage = "idade entre 18 e 120 anos")]
+        [Range(0, 120, ErrorMessage = "idade entre 0 e 120 anos")]
         public int idade { get; set; }
 
         [Display(Name = "Vitorias: ")]
