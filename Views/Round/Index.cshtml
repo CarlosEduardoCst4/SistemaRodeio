@@ -13,6 +13,12 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.competidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.animal)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.data)
             </th>
             <th>
@@ -30,6 +36,12 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.competidor.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.animal.nome)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.data)
             </td>

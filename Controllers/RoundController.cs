@@ -22,7 +22,8 @@ namespace SistemaRodeio.Controllers
         // GET: Round
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Rounds.ToListAsync());
+            var appDbContext = _context.Rounds.Include(r => r.animal).Include(r => r.competidor);
+            return View(await appDbContext.ToListAsync());
         }
 
         // GET: Round/Details/5
@@ -34,6 +35,8 @@ namespace SistemaRodeio.Controllers
             }
 
             var round = await _context.Rounds
+                .Include(r => r.animal)
+                .Include(r => r.competidor)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (round == null)
             {
@@ -46,6 +49,8 @@ namespace SistemaRodeio.Controllers
         // GET: Round/Create
         public IActionResult Create()
         {
+            ViewData["animalid"] = new SelectList(_context.Animais, "id", "nome");
+            ViewData["competidorid"] = new SelectList(_context.Competidores, "id", "nome");
             return View();
         }
 
@@ -54,7 +59,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,data,notAnimal,notCompetidor,penalidade")] Round round)
+        public async Task<IActionResult> Create([Bind("id,competidorid,animalid,data,notAnimal,notCompetidor,penalidade")] Round round)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +67,8 @@ namespace SistemaRodeio.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["animalid"] = new SelectList(_context.Animais, "id", "nome", round.animalid);
+            ViewData["competidorid"] = new SelectList(_context.Competidores, "id", "nome", round.competidorid);
             return View(round);
         }
 
@@ -78,6 +85,8 @@ namespace SistemaRodeio.Controllers
             {
                 return NotFound();
             }
+            ViewData["animalid"] = new SelectList(_context.Animais, "id", "nome", round.animalid);
+            ViewData["competidorid"] = new SelectList(_context.Competidores, "id", "nome", round.competidorid);
             return View(round);
         }
 
@@ -86,7 +95,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,data,notAnimal,notCompetidor,penalidade")] Round round)
+        public async Task<IActionResult> Edit(int id, [Bind("id,competidorid,animalid,data,notAnimal,notCompetidor,penalidade")] Round round)
         {
             if (id != round.id)
             {
@@ -113,6 +122,8 @@ namespace SistemaRodeio.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["animalid"] = new SelectList(_context.Animais, "id", "nome", round.animalid);
+            ViewData["competidorid"] = new SelectList(_context.Competidores, "id", "nome", round.competidorid);
             return View(round);
         }
 
@@ -125,6 +136,8 @@ namespace SistemaRodeio.Controllers
             }
 
             var round = await _context.Rounds
+                .Include(r => r.animal)
+                .Include(r => r.competidor)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (round == null)
             {

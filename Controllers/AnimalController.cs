@@ -22,7 +22,8 @@ namespace SistemaRodeio.Controllers
         // GET: Animal
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Animais.ToListAsync());
+            var appDbContext = _context.Animais.Include(a => a.tipoAnimal);
+            return View(await appDbContext.ToListAsync());
         }
 
         // GET: Animal/Details/5
@@ -34,6 +35,7 @@ namespace SistemaRodeio.Controllers
             }
 
             var animal = await _context.Animais
+                .Include(a => a.tipoAnimal)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (animal == null)
             {
@@ -46,6 +48,7 @@ namespace SistemaRodeio.Controllers
         // GET: Animal/Create
         public IActionResult Create()
         {
+            ViewData["tipoAnimalid"] = new SelectList(_context.TiposAnimais, "id", "descricao");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,nome,idade,peso,valor")] Animal animal)
+        public async Task<IActionResult> Create([Bind("id,nome,tipoAnimalid,idade,peso,valor")] Animal animal)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace SistemaRodeio.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["tipoAnimalid"] = new SelectList(_context.TiposAnimais, "id", "descricao", animal.tipoAnimalid);
             return View(animal);
         }
 
@@ -78,6 +82,7 @@ namespace SistemaRodeio.Controllers
             {
                 return NotFound();
             }
+            ViewData["tipoAnimalid"] = new SelectList(_context.TiposAnimais, "id", "descricao", animal.tipoAnimalid);
             return View(animal);
         }
 
@@ -86,7 +91,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,nome,idade,peso,valor")] Animal animal)
+        public async Task<IActionResult> Edit(int id, [Bind("id,nome,tipoAnimalid,idade,peso,valor")] Animal animal)
         {
             if (id != animal.id)
             {
@@ -113,6 +118,7 @@ namespace SistemaRodeio.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["tipoAnimalid"] = new SelectList(_context.TiposAnimais, "id", "descricao", animal.tipoAnimalid);
             return View(animal);
         }
 
@@ -125,6 +131,7 @@ namespace SistemaRodeio.Controllers
             }
 
             var animal = await _context.Animais
+                .Include(a => a.tipoAnimal)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (animal == null)
             {

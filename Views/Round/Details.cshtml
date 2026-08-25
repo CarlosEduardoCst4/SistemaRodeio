@@ -11,6 +11,18 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.competidor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.competidor.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animal.nome)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.data)
         </dt>
         <dd class = "col-sm-10">

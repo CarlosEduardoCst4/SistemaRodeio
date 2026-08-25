@@ -22,7 +22,8 @@ namespace SistemaRodeio.Controllers
         // GET: Competidor
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Competidores.ToListAsync());
+            var appDbContext = _context.Competidores.Include(c => c.cidade);
+            return View(await appDbContext.ToListAsync());
         }
 
         // GET: Competidor/Details/5
@@ -34,6 +35,7 @@ namespace SistemaRodeio.Controllers
             }
 
             var competidor = await _context.Competidores
+                .Include(c => c.cidade)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (competidor == null)
             {
@@ -46,6 +48,7 @@ namespace SistemaRodeio.Controllers
         // GET: Competidor/Create
         public IActionResult Create()
         {
+            ViewData["cidadeid"] = new SelectList(_context.Cidades, "id", "descricao");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,nome,idade,vitorias")] Competidor competidor)
+        public async Task<IActionResult> Create([Bind("id,nome,cidadeid,idade,vitorias")] Competidor competidor)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace SistemaRodeio.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["cidadeid"] = new SelectList(_context.Cidades, "id", "descricao", competidor.cidadeid);
             return View(competidor);
         }
 
@@ -78,6 +82,7 @@ namespace SistemaRodeio.Controllers
             {
                 return NotFound();
             }
+            ViewData["cidadeid"] = new SelectList(_context.Cidades, "id", "descricao", competidor.cidadeid);
             return View(competidor);
         }
 
@@ -86,7 +91,7 @@ namespace SistemaRodeio.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,nome,idade,vitorias")] Competidor competidor)
+        public async Task<IActionResult> Edit(int id, [Bind("id,nome,cidadeid,idade,vitorias")] Competidor competidor)
         {
             if (id != competidor.id)
             {
@@ -113,6 +118,7 @@ namespace SistemaRodeio.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["cidadeid"] = new SelectList(_context.Cidades, "id", "descricao", competidor.cidadeid);
             return View(competidor);
         }
 
@@ -125,6 +131,7 @@ namespace SistemaRodeio.Controllers
             }
 
             var competidor = await _context.Competidores
+                .Include(c => c.cidade)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (competidor == null)
             {

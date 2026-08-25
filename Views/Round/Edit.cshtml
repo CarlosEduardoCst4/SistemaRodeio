@@ -14,6 +14,16 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
+                <label asp-for="competidorid" class="control-label"></label>
+                <select asp-for="competidorid" class="form-control" asp-items="ViewBag.competidorid"></select>
+                <span asp-validation-for="competidorid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="animalid" class="control-label"></label>
+                <select asp-for="animalid" class="form-control" asp-items="ViewBag.animalid"></select>
+                <span asp-validation-for="animalid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="data" class="control-label"></label>
                 <input asp-for="data" class="form-control" />
                 <span asp-validation-for="data" class="text-danger"></span>

@@ -19,6 +19,11 @@
                 <span asp-validation-for="nome" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="cidadeid" class="control-label"></label>
+                <select asp-for="cidadeid" class="form-control" asp-items="ViewBag.cidadeid"></select>
+                <span asp-validation-for="cidadeid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="idade" class="control-label"></label>
                 <input asp-for="idade" class="form-control" />
                 <span asp-validation-for="idade" class="text-danger"></span>
