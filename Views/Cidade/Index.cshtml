@@ -1,0 +1,52 @@
+@model IEnumerable<SistemaRodeio.Models.Cidade>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="fw-bold text-primary mb-0">CIDADE</h2>
+
+<p>
+    <a asp-action="Create">Criar Cidade</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sigla)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sigla)
+            </td>
+            <td class="text-center" style="width: 160px;">
+                <a href="@Url.Action("Edit", "Cidade", new { id = item.id })"
+                class="btn btn-sm btn-outline-primary me-1"
+                title="Editar">
+                <i class="bi bi-pencil-fill"></i>
+                </a>
+                <a href="@Url.Action("Details", "Cidade", new { id = item.id })"
+                class="btn btn-sm btn-outline-info me-1"
+                title="Detalhes">
+                <i class="bi bi-eye-fill"></i>
+                </a>
+                <a href="@Url.Action("Delete", "Cidade", new { id = item.id })"
+                class="btn btn-sm btn-outline-danger"
+                title="Excluir">
+                <i class="bi bi-trash-fill"></i>
+                </a>
+            </td>
+        </tr>}
+    </tbody>
+</table>

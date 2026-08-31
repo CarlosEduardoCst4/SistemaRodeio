@@ -1,0 +1,70 @@
+@model IEnumerable<SistemaRodeio.Models.Animal>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="fw-bold text-primary mb-0">ANIMAL</h2>
+
+<p>
+    <a asp-action="Create">Criar Animal</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoAnimal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.peso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.valor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoAnimal.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.peso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valor)
+            </td>
+                <td class="text-center" style="width: 160px;">
+                <a href="@Url.Action("Edit", "Animal", new { id = item.id })"
+                class="btn btn-sm btn-outline-primary me-1"
+                title="Editar">
+                <i class="bi bi-pencil-fill"></i>
+                </a>
+                <a href="@Url.Action("Details", "Animal", new { id = item.id })"
+                class="btn btn-sm btn-outline-info me-1"
+                title="Detalhes">
+                <i class="bi bi-eye-fill"></i>
+                </a>
+                <a href="@Url.Action("Delete", "Animal", new { id = item.id })"
+                class="btn btn-sm btn-outline-danger"
+                title="Excluir">
+                <i class="bi bi-trash-fill"></i>
+                </a>
+            </td>
+        </tr>}
+    </tbody>
+</table>

@@ -1,0 +1,77 @@
+@model IEnumerable<SistemaRodeio.Models.Round>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="fw-bold text-primary mb-0">ROUND</h2>
+
+<p>
+    <a asp-action="Create">Criar Round</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.competidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.animal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.notAnimal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.notCompetidor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.penalidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.competidor.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.animal.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.notAnimal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.notCompetidor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.penalidade)
+            </td>
+            <td class="text-center" style="width: 160px;">
+                <a href="@Url.Action("Edit", "Round", new { id = item.id })"
+                class="btn btn-sm btn-outline-primary me-1"
+                title="Editar">
+                <i class="bi bi-pencil-fill"></i>
+                </a>
+                <a href="@Url.Action("Details", "Round", new { id = item.id })"
+                class="btn btn-sm btn-outline-info me-1"
+                title="Detalhes">
+                <i class="bi bi-eye-fill"></i>
+                </a>
+                <a href="@Url.Action("Delete", "Round", new { id = item.id })"
+                class="btn btn-sm btn-outline-danger"
+                title="Excluir">
+                <i class="bi bi-trash-fill"></i>
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
