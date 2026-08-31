@@ -4,10 +4,17 @@
     ViewData["Title"] = "Index";
 }
 
+<<<<<<< HEAD
 <h2 class="fw-bold text-primary mb-0">ROUND</h2>
 
 <p>
     <a asp-action="Create">Criar Round</a>
+=======
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
 </p>
 <table class="table">
     <thead>
@@ -54,6 +61,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.penalidade)
             </td>
+<<<<<<< HEAD
             <td class="text-center" style="width: 160px;">
                 <a href="@Url.Action("Edit", "Round", new { id = item.id })"
                 class="btn btn-sm btn-outline-primary me-1"
@@ -70,6 +78,12 @@
                 title="Excluir">
                 <i class="bi bi-trash-fill"></i>
                 </a>
+=======
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
             </td>
         </tr>
 }

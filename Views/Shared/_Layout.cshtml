@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SistemaRodeio.styles.css" asp-append-version="true" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <style>
         :root{
@@ -47,10 +48,19 @@
                     @* Logo da equipe  *@
                     <img src="~/images/logo-sem-fundo.png" alt="Logo da equipe" height="70" />
                 </a>
+=======
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SistemaRodeio</a>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+<<<<<<< HEAD
 
                 <div class="navbar-collapse collapse justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
@@ -74,20 +84,48 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Round" asp-action="Index">Round</a>
+=======
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Animal" asp-action="Index">Animal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TipoAnimal" asp-action="Index">Tipo de Animal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cidade" asp-action="Index">Cidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Competidor" asp-action="Index">Competidor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Round" asp-action="Index">Round</a>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+<<<<<<< HEAD
 
     @* Corpo da Pagina *@
+=======
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+<<<<<<< HEAD
     @* Rodapé da Pagina*@
     <footer class="mt-auto py-3"
         style="background-color: var(--cor-footer);">
@@ -103,9 +141,20 @@
 </footer>
 
     @*Config - JavaScript*@
+=======
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - SistemaRodeio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c

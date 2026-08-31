@@ -1,14 +1,19 @@
 using System.Diagnostics;
+<<<<<<< HEAD
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaRodeio.Data;
+=======
+using Microsoft.AspNetCore.Mvc;
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
 using SistemaRodeio.Models;
 
 namespace SistemaRodeio.Controllers;
 
 public class HomeController : Controller
 {
+<<<<<<< HEAD
     private readonly AppDbContext _context;
 
     public HomeController(AppDbContext context)
@@ -48,6 +53,11 @@ public class HomeController : Controller
         };
 
         return View(viewModel);
+=======
+    public IActionResult Index()
+    {
+        return View();
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
     }
 
     public IActionResult Privacy()
