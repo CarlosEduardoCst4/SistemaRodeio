@@ -1,0 +1,57 @@
+@model SistemaRodeio.Models.Round
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2 class="fw-bold text-primary mb-0">DELETAR ROUND</h2>
+
+<div>
+    <h4>Round</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.competidor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.competidor.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.animal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.animal.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.data)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.notAnimal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.notAnimal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.notCompetidor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.notCompetidor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.penalidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.penalidade)
+        </dd>
+    </dl>
+    <h3>Quer deletar Round mesmo?</h3>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">VOLTAR</a>
+    </form>
+</div>

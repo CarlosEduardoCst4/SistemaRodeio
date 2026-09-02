@@ -1,0 +1,45 @@
+@model SistemaRodeio.Models.Competidor
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2 class="fw-bold text-primary mb-0">DELETAR COMPETIDOR</h2>
+
+<div>
+    <h4>Competidor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cidade.descricao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.vitorias)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.vitorias)
+        </dd>
+    </dl>
+<h3>Quer deletar Competidor mesmo?</h3>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> <a asp-action="Index" class="btn btn-secondary">
+    <i class="bi bi-arrow-left"></i> VOLTAR </a>
+    </form>
+</div>
