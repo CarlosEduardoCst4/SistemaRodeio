@@ -1,0 +1,160 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
+build_property.RootNamespace = SistemaRodeio
+build_property.RootNamespace = SistemaRodeio
+build_property.ProjectDir = C:\Users\Duduc\OneDrive\Documentos\Facul\Segundo_Ano\Algt_Almir\DotNet\ProjetoDotNet\SistemaRodeio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Duduc\OneDrive\Documentos\Facul\Segundo_Ano\Algt_Almir\DotNet\ProjetoDotNet\SistemaRodeio
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Animal/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Animal/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Animal/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Animal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Animal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Cidade/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Cidade/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Cidade/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Cidade/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Cidade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Competidor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWRvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Competidor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWRvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Competidor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWRvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Competidor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWRvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Competidor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Round/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91bmRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Round/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91bmRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Round/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91bmRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Round/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91bmRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Round/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm91bmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/TipoAnimal/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FuaW1hbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/TipoAnimal/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FuaW1hbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/TipoAnimal/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FuaW1hbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/TipoAnimal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FuaW1hbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/TipoAnimal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0FuaW1hbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Duduc/OneDrive/Documentos/Facul/Segundo_Ano/Algt_Almir/DotNet/ProjetoDotNet/SistemaRodeio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4tkehf63ty
