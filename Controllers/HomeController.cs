@@ -1,14 +1,53 @@
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SistemaRodeio.Data;
 using SistemaRodeio.Models;
 
 namespace SistemaRodeio.Controllers;
 
 public class HomeController : Controller
 {
-    public IActionResult Index()
+    private readonly AppDbContext _context;
+
+    public HomeController(AppDbContext context)
     {
-        return View();
+        _context = context;
+    }
+
+    // GET: Home / Painel (Dashboard)
+    public async Task<IActionResult> Index()
+    {
+        var viewModel = new DashboardViewModel
+        {
+            TotalAnimais = await _context.Animais.CountAsync(),
+            TotalCompetidores = await _context.Competidores.CountAsync(),
+            TotalCidades = await _context.Cidades.CountAsync(),
+            TotalRounds = await _context.Rounds.CountAsync(),
+            TotalTiposAnimais = await _context.TiposAnimais.CountAsync(),
+
+            AnimaisPorTipo = await _context.Animais
+                .GroupBy(a => a.tipoAnimal!.descricao)
+                .Select(g => new AnimalPorTipo { Tipo = g.Key, Quantidade = g.Count() })
+                .OrderByDescending(g => g.Quantidade)
+                .ToListAsync(),
+
+            TopCompetidores = await _context.Competidores
+                .Include(c => c.cidade)
+                .OrderByDescending(c => c.vitorias)
+                .Take(5)
+                .ToListAsync(),
+
+            UltimosRounds = await _context.Rounds
+                .Include(r => r.animal)
+                .Include(r => r.competidor)
+                .OrderByDescending(r => r.data)
+                .Take(5)
+                .ToListAsync()
+        };
+
+        return View(viewModel);
     }
 
     public IActionResult Privacy()

@@ -4,10 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h2 class="fw-bold text-primary mb-0">COMPETIDOR</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">
+        <svg width="24" height="24" viewBox="0 0 140 120" style="vertical-align:-6px;">
+    <ellipse cx="60" cy="70" rx="55" ry="55" fill="none" stroke="currentColor" stroke-width="8"/>
+    <path d="M100 20 L130 -10 L134 -2 L108 26 Z" fill="currentColor"/>
+    <line x1="60" y1="50" x2="60" y2="90" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+    <line x1="40" y1="70" x2="80" y2="70" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+</svg> Criar Competidor </a>
 </p>
 <table class="table">
     <thead>
@@ -42,10 +48,22 @@
             <td>
                 @Html.DisplayFor(modelItem => item.vitorias)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            <td class="text-center" style="width: 160px;">
+                <a href="@Url.Action("Edit", "Competidor", new { id = item.id })"
+                class="btn btn-sm btn-outline-primary me-1"
+                title="Editar">
+                <i class="bi bi-pencil-fill"></i>
+                </a>
+                <a href="@Url.Action("Details", "Competidor", new { id = item.id })"
+                class="btn btn-sm btn-outline-info me-1"
+                title="Detalhes">
+                <i class="bi bi-eye-fill"></i>
+                </a>
+                <a href="@Url.Action("Delete", "Competidor", new { id = item.id })"
+                class="btn btn-sm btn-outline-danger"
+                title="Excluir">
+                <i class="bi bi-trash-fill"></i>
+                </a>
             </td>
         </tr>
 }

@@ -20,7 +20,7 @@ namespace SistemaRodeio.Models
 
         [Display(Name = "Cidade: ")]
         [ForeignKey("cidadeid")]
-        public virtual Cidade cidade { get; set; }
+        public virtual Cidade? cidade { get; set; }
 
         [Display(Name = "Idade: ")]
         [Range(0, 120, ErrorMessage = "idade entre 0 e 120 anos")]

@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaRodeio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bb1913d0f21c6426fcb73d56663e621d7684809")]
+>>>>>>> 2e2d6fb92510fc9b00fcde228d7eb65df285655c
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaRodeio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaRodeio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,12 +13,12 @@ namespace SistemaRodeio.Models
         [Display(Name = "Competidor: ")]
         public int competidorid { get; set; }
         [ForeignKey("competidorid")]
-        public virtual Competidor competidor { get; set; }
+        public virtual Competidor? competidor { get; set; }
 
         [Display(Name = "Animal: ")]
         public int animalid { get; set; }
         [ForeignKey("animalid")]
-        public virtual Animal animal { get; set; }
+        public virtual Animal? animal { get; set; }
 
         [Display(Name = "Data: ")]
         public DateTime data { get; set; }

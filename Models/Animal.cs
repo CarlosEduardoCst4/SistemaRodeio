@@ -21,7 +21,7 @@ namespace SistemaRodeio.Models
 
         [Display(Name = "Tipo Animal: ")]
         [ForeignKey("tipoAnimalid")]
-        public virtual TipoAnimal tipoAnimal { get; set; }
+        public virtual TipoAnimal? tipoAnimal { get; set; }
 
         [Display(Name = "Idade: ")]
         [Range(0, 120, ErrorMessage = "idade entre 0 e 120 anos")]
